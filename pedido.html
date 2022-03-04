@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctiva HTML: Caso Pasteleria</title>
+</head>
+
+
+<body>
+    <h1>Aquí se hace el pedido</h1>
+
+    <img src="2.png" alt="100px">
+
+
+    <form action="pedido.js">
+        <label for="Nombre">¿Cuál es tu nombre?</label><br>
+        <input type="text" name="Nombre" id="Nombre" placeholder="Nombre"><br><br>
+
+
+        <label for="Telefono">Ingresa tu Telefono</label><br>
+        <input type="tel" id="Telefono" name="Telefono" maxlength="10"><br><br>
+
+
+        <label for="correo1">Ingresa tu correo</label><br>
+        <input type="email" id="correo" name="correo"><br><br>
+
+        <hr>
+
+        <h2>¿Qué deseas comprar?</h2>
+
+        <label for="Pedido"></label>
+        <select name="pedido" id="pedido">
+            <option value="coreano">Pastel coreano</option>
+            <option value="mediaDocena">Media docena de cupcakes</option>
+            <option value="docena">Docena de cupcakes</option>
+            <option value="veinticuatroCupcake">24 de cupcakes</option>
+        </select>
+
+        <hr>
+
+        <h2>Escoge el sabor de pan / bizcocho de tu preferencia</h2>
+
+        <input type="radio" id="topping1" name="topping1" value="redVelvet">
+        <label for="topping1">Red velvet</label><br>
+
+        <input type="radio" id="topping2" name="topping2" value="vainillaFrancesa">
+        <label for="topping2">Vainilla francesa</label><br>
+
+        <input type="radio" id="topping3" name="topping3" value="chocoSuizo">
+        <label for="topping3">Chocolate suizo</label><br>
+
+        <input type="radio", id="topping4" name="topping4" value="ganacheChocolate">
+        <label for="topping4">Ganache de chocolate </label><br><br>
+
+
+        <label for="relleno">Elige tu relleno favorito</label><br>
+
+        <input list="relleno">
+        <datalist id="relleno">
+            <option value="Frutos rojos">
+            <option value="Zarzamora">
+            <option value="Fresas con crema">
+            <option value="Nuez">
+            <option value="Tres leches">
+        </datalist>
+        <br><br>
+
+
+        <hr>
+
+        <h2>Escoge el adorno / extra que desees</h2>
+        <label for="adornos"></label>
+
+        <input type="radio" name="extra1" id="extra1">
+        <label for="extra1">Flores comestibles</label><br>
+
+        <input type="radio" name="extra2" id="extra2">
+        <label for="extra2">Cake topper</label>
+
+
+        <hr>
+
+        <h2>Realizar pedido</h2>
+        <input type="button" id="boton1" name="boton1" value="Enviar" onclick="alert('Tu pedido ha sido realzado con éxito!');"><br><br>
+
+
+    </form>
+</body>
+
+</html>
